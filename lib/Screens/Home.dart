@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
+     /* bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
         currentIndex: SelectedIndex,
         selectedItemColor: Color(0xfff2ba2e),
@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
             SelectedIndex=index;
           });
         },
-      ),
+      ), */
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: Padding(
@@ -242,7 +242,8 @@ class _HomePageState extends State<HomePage> {
                                   color: Colors.black,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold
-                              ),),
+                              ),
+                              ),
                             ],
                           ),
                           Padding(padding: EdgeInsets.only(bottom: 2)),
@@ -253,6 +254,7 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                     ),
+
                     Container(
                       height:MediaQuery.of(context).size.height,
                       child: ListView (
